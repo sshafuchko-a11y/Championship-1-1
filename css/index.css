@@ -1,0 +1,425 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.light-theme {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+button,
+input[type="email"],
+input[type="password"] {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4a6fa5;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #3a5a8c;
+  color: #eee;
+}
+
+/* Шапка */
+header {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a6fa5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid #4a6fa5;
+  color: #4a6fa5;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #eef4ff;
+}
+
+/* Слайдер популярных конкурсов */
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.rating {
+  color: gold;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  background: #4a6fa5;
+}
+
+/* Форма авторизации */
+.auth-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.auth-form input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #4a6fa5;
+}
+
+/* О нас */
+.about {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+/* Видео */
+.video-container {
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+}
+
+/* Поиск */
+.search-box {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search-box .container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border-radius: 30px;
+}
+
+/* Конкурсы */
+.competitions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.competition-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.competition-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  height: 160px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #aaa;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-rating {
+  color: gold;
+  margin: 8px 0;
+}
+
+.entries {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Отзывы */
+.feedback-slider {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-slide {
+  background: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-bottom: 15px;
+}
+
+.author-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.feedback-date {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Подписка */
+.subscription-form {
+  background: #4a6fa5;
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.subscription-form h3 {
+  margin-bottom: 20px;
+}
+
+.subscription-form input[type="email"] {
+  width: 70%;
+  margin-bottom: 15px;
+  background: white;
+  color: black;
+}
+
+.consent {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.consent input {
+  margin-right: 8px;
+}
+
+/* Подвал */
+footer {
+  background: #333;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #bbb;
+}
+
+.footer-col a:hover {
+  color: white;
+}
+
+.contacts a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+  .competitions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .competitions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
