@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Расписание конкурсов - Моя семья - мой космос</title>
+  <link rel="stylesheet" href="/css/schedule.css" />
+</head>
+<body class="light-theme">
+
+  <!-- Шапка -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="/media/images/logo.png" alt="Логотип: Моя семья - мой космос">
+        Моя семья - мой космос
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/registration.html">Регистрация</a></li>
+          <li><a href="/account.html">Личный кабинет</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" onclick="alert('Переключение темы не реализовано в верстке')">Светлая тема</button>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <main>
+    <section class="container">
+      <h1>Расписание конкурсов</h1>
+      <p>Зелёный — есть свободные места, красный — регистрация завершена, серый — конкурс не проводится в этот слот.</p>
+
+      <div class="schedule-container">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Конкурс</th>
+              <th class="time-slot">9–10</th>
+              <th class="time-slot">10–11</th>
+              <th class="time-slot">11–12</th>
+              <th class="time-slot">12–13</th>
+              <th class="time-slot">13–14</th>
+              <th class="time-slot">14–15</th>
+              <th class="time-slot">15–16</th>
+              <th class="time-slot">16–17</th>
+              <th class="time-slot">17–18</th>
+              <th class="time-slot">18–19</th>
+              <th class="time-slot">19–20</th>
+              <th class="time-slot">20–21</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 1. Семейная орбитальная станция (25 мест, 10 занято → 15 свободно) -->
+            <tr>
+              <td>«Семейная орбитальная станция»</td>
+              <td><div class="slot-cell slot-available">15</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+
+            <!-- 2. Космический дизайнер (20 мест, 1 занято → 19 свободно) -->
+            <tr>
+              <td>«Космический дизайнер»</td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-available">19</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+
+            <!-- 3. Гонки на луноходах (17 мест, 15 занято → 2 свободно) -->
+            <tr>
+              <td>«Гонки на луноходах»</td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-available">2</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+
+            <!-- 4. Викторина «Звёздная семья» (78 мест, 53 занято → 25 свободно) -->
+            <tr>
+              <td>«Викторина «Звёздная семья»</td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-available">25</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+
+            <!-- 5. Парад космических костюмов (35 мест, 5 занято → 30 свободно) -->
+            <tr>
+              <td>«Парад космических костюмов»</td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-available">30</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+
+            <!-- 6. Невесомость в банке (12 мест, 7 занято → 5 свободно) -->
+            <tr>
+              <td>«Невесомость в банке»</td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-available">5</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+
+            <!-- 7. Собери космический пазл (25 мест, 18 занято → 7 свободно) -->
+            <tr>
+              <td>«Собери космический пазл на время»</td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-available">7</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+
+            <!-- 8. Танец планет (16 мест, 4 занято → 12 свободно) -->
+            <tr>
+              <td>«Танец планет»</td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-available">12</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+
+            <!-- 9. Кулинарный поединок (55 мест, 40 занято → 15 свободно) -->
+            <tr>
+              <td>«Кулинарный поединок: Космический перекус»</td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-available">15</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+
+            <!-- 10. Фото-челлендж (80 мест, 56 занято → 24 свободно) -->
+            <tr>
+              <td>«Фото-челлендж «Выход в открытую семью»</td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-available">24</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+              <td><div class="slot-cell slot-empty">—</div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer id="contacts">
+    <div class="container footer-content">
+      <div class="footer-col contacts">
+        <h4>Контакты</h4>
+        <p>Телефон: <a href="tel:+74842234567">+7 (4842) 23-45-67</a></p>
+        <p>Почта: <a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/registration.html">Регистрация</a></li>
+          <li><a href="/account.html">Личный кабинет</a></li>
+          <li><a href="404.html">Страница не найдена</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
