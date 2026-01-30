@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Личный кабинет - Моя семья - мой космос</title>
+  <link rel="stylesheet" href="style-light.css" />
+  <link rel="stylesheet" href="/css/account.css" />
+</head>
+<body class="light-theme">
+
+  <!-- Шапка -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="/media/images/logo.png" alt="Логотип: Моя семья - мой космос">
+        Моя семья - мой космос
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/index.html">О нас</a></li>
+          <li><a href="/schedule.html">Конкурсы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="/registration.html" class="logout-link">Выйти</a>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <main class="container">
+    <section class="profile-section">
+      <h1>Личный кабинет</h1>
+      <p>Запишитесь на конкурс и участвуйте всей семьёй!</p>
+
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="competition">Конкурс</label>
+          <select id="competition" required>
+            <option value="">Выберите конкурс</option>
+            <option value="quest">Семейный квест</option>
+            <option value="craft">Космическая поделка</option>
+            <option value="photo">Фотоконкурс «Моя галактика»</option>
+            <option value="theater">Театральная сцена</option>
+            <option value="music">Музыкальный конкурс</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Дата участия</label>
+          <input type="text" id="date" value="8 июля 2024 г." readonly>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Время участия</label>
+          <select id="time" required>
+            <option value="">Выберите время</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+            <option value="21:00">21:00</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="participants">Количество участников</label>
+          <input type="number" id="participants" min="1" max="10" placeholder="От 1 до 10 человек" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Записаться на конкурс</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer id="contacts">
+    <div class="container footer-content">
+      <div class="footer-col contacts">
+        <h4>Контакты</h4>
+        <a href="tel:+74842234567">+7 (4842) 23-45-67</a>
+        <a href="mailto:family@cosmos.ru">family@cosmos.ru</a>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/registration.html">Регистрация</a></li>
+          <li><a href="/schedule.html">Конкурс</a></li>
+          <li><a href="404.html">Страница не найдена</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
